@@ -1,0 +1,7 @@
+node_modules
+# build
+.htaccess
+.env
+error.log
+out.log
+uploads
