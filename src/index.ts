@@ -246,25 +246,25 @@ io.on("connection", (socket) => {
 
 
 // import routes from router
-app.use('/api', preseedRoutes);
-app.use('/api', userRoutes);
-app.use('/api', serviceRoutes);
-app.use('/api', categoryRoutes);
-app.use('/api', subCategoryRoutes);
-app.use('/api', brandRoutes);
-app.use('/api', blogRoutes);
-app.use('/api', modelRoutes);
-app.use('/api', variantRoutes);
-app.use('/api', orderRoutes);
-app.use('/api', permissionRoutes);
-app.use('/api', productRoutes);
-app.use('/api', roleRoutes);
-app.use('/api', roomRoutes);
-app.use('/api', messageRoutes);
-app.use('/api', reminderRoutes);
-app.use('/api', patientRoutes);
-app.use('/api', featureAndSpecificationRoutes);
-app.use('/api', globalRoutes);
+app.use('/', preseedRoutes);
+app.use('/', userRoutes);
+app.use('/', serviceRoutes);
+app.use('/', categoryRoutes);
+app.use('/', subCategoryRoutes);
+app.use('/', brandRoutes);
+app.use('/', blogRoutes);
+app.use('/', modelRoutes);
+app.use('/', variantRoutes);
+app.use('/', orderRoutes);
+app.use('/', permissionRoutes);
+app.use('/', productRoutes);
+app.use('/', roleRoutes);
+app.use('/', roomRoutes);
+app.use('/', messageRoutes);
+app.use('/', reminderRoutes);
+app.use('/', patientRoutes);
+app.use('/', featureAndSpecificationRoutes);
+app.use('/', globalRoutes);
 app.use('/public/',express.static(path.join(__dirname, '/../public')));
 app.use('/uploads/video/',express.static(path.join(__dirname, '/../uploads/video')));
 app.use('/uploads/photo/',express.static(path.join(__dirname, '/../uploads/photo')));
